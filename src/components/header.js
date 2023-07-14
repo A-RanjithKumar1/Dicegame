@@ -6,7 +6,7 @@ const Header = (props) => {
     <>
       <div class="header">Roll And Chill</div>
       <div class="diceContainer">
-        <img src={img} id="display" alt="" />
+        <img src={img} id="display" alt="img" />
       </div>
     </>
   );
