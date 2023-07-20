@@ -56,24 +56,137 @@ img {
   width: 150px;
   height: 150px;
   background-color: white;
+  border-radius: 30px;
 }
 .playerContainer {
-  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
 }
 .buttons {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 34%;
 }
 .player1 {
+  width: 33%;
   color: white;
-  margin-left: 80px;
   text-shadow: 2px 2px 5px red;
+  height: 200px;
 }
 .player2 {
+  width: 33%;
   color: white;
-  margin-right: 80px;
   text-shadow: 2px 2px 5px red;
+  height: 200px;
+}
+#winner-box {
+  top: 46%;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid rosybrown;
+  border-radius: 16px;
+  width: 50%;
+  height: 30%;
+}
+.container {
+  display: block;
+}
+#first,
+#second {
+  width: 88px;
+  height: 61px;
+  border-radius: 79px;
+  border: none;
+  background-size: cover;
+  color: white;
+  background-image: url("C:/Users/Tringapps-User13/OneDrive/Desktop/all works/DiceGameUsingReact/dice/src/images/first.png");
+  background-size: cover;
+  margin-top: 53px;
+}
+#second {
+  display: none;
+}
+#winner-box button {
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: coral;
+}
+@media (max-width: 768px) {
+  img {
+    width: 115px;
+    height: 110px;
+    background-color: white;
+    border-radius: 28px;
+  }
+  .playerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -20px;
+  }
+  .player1 {
+    color: white;
+    text-shadow: 2px 2px 5px red;
+    font-size: 12px;
+    margin-top: 50px;
+    width: 33%;
+  }
+  .player2 {
+    color: white;
+    text-shadow: 2px 2px 5px red;
+    font-size: 12px;
+    margin-top: 50px;
+    width: 33%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    margin-top: 6px;
+  }
+  .btn {
+    background-image: linear-gradient(
+      to right,
+      #d31027 0%,
+      #ea384d 51%,
+      #d31027 100%
+    );
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 104px;
+    height: 33px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  #winner-box {
+    top: 46%;
+    display: none;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid rosybrown;
+    border-radius: 16px;
+    width: 88%;
+    height: 30%;
+  }
 }
